@@ -4,7 +4,7 @@ docs.flutter.dev/get-started/install/windows
 3. 압축풀고 flutter\bin 환경변수 등록 (환경변수의 Path)
 4. vscode extension (flutter 설치 이후 Ctrl Shift P dart new project ) 이후 Console Application
 
-
+```
 * Dart 중요 정리
 1. Dart는 모든 변수는 객체이며 클래스의 인스턴스 (Integer, Function, Null 등 모두 객체로 취급)
 2. Dart 2 이상부터 Null Safety (Kotlin에서도 마찬가지. Nullpointer Exception 처리)
@@ -13,15 +13,17 @@ docs.flutter.dev/get-started/install/windows
 5. Dart는 main 함수와 같은 Top Level 함수를 지원
 6. Dart는 public protected, private와 같은 키워드를 지원하지 않음. (만약 식별자 이름앞에 _를 붙이면 라이브러리에서 private처럼 사용 가능) 
 7. Dart는 (삼항 연산자)를 지원
+```
 
-
+```
 - 변수의 초기화 방법
 var name = 'bob'; (String 객체의 reference type) 입력 받은 값에 따라 자료형 결정 ( 이후 변경 불가 )
 Object name1 = 'bob';		모든 객체는 오브젝트를 상송하기 때문.
 dynamic name2 = 'bob';	var와 동일하지만 살짝 차이가 있음. 입력받은 값에 따라 자료형 결정 ( 이후 변경 가능)
 String name3 = 'bob';		String 키워드 또한 사용 가능
+```
 
-
+```
 - Built-in types (데이터 타입)
 int, double		정수형 및 실수
 num 			정수형 또는 실수형
@@ -35,7 +37,9 @@ Map
 Runes		모바일 환경에서 사용하는 emoji 아이콘
 Symbol		Runes와 비슷
 Null
+```
 
+```
 - 개발 중에 assert 문을 디버깅에 도움이 됩니다. (false인경우 예외 발생 AssertionError)
 assert (조건식, 추가메시지);
 // 변수가 null 값인지 검사.
@@ -58,8 +62,9 @@ assert(urlString.startsWith('https'));
 
 
 assert(urlString.startsWith('https'), 'URL ($urlString) should start with "https".');
+```
 
-
+```
 - Operator (연산자)
  <		+		|		>>>
  >		/		^		[]
@@ -80,8 +85,9 @@ is!
  &	AND		|		OR
  ^	XOR		~expr	
  <<	>>	shift		>>>  unsigned shift right
+```
 
-
+```
 - Collections (컬렉션)
 동일한 데이터 타입의 데이터들을 한 곳에서 다루는 것
 Dart에서는 별도로 Collection이라는 개념으로 관리하고 있지 않다.
@@ -102,8 +108,9 @@ List, Set, Map 또한 하나의 데이터 타입으로 취급하기 때문에 va
 var list1 = [1, 2, 3];		// 배열의 개념 데이터를 인덱스에 기반하여 관리하는 객체 
 var set3 = {1, 2, 3};
 var map2 = {1: "test1", 2: "test2"};
+```
 
-
+```
 - 조건문
 if (${조건변수}){
 	실행 문장
@@ -137,4 +144,4 @@ do {
 } while (number < 5 && number > -5);
 
 그리고 break 및 continue도 사용 가능
-
+```
