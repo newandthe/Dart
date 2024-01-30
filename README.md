@@ -85,6 +85,10 @@ is!
  &	AND		|		OR
  ^	XOR		~expr	
  <<	>>	shift		>>>  unsigned shift right
+
+* ? Operator 사용방법
+b ??= value;  // b라는 객체의 value값이 있는지(null인지 확인 후) 확인 후 해당 값을 대입하는 방법.
+
 ```
 
 ```
