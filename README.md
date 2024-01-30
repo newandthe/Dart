@@ -61,25 +61,25 @@ assert(urlString.startsWith('https'), 'URL ($urlString) should start with "https
 
 
 - Operator (연산자)
-<		+		|		>>>
->		/		^		[]
-<=		~/		&		[]=
->=		*		<<		~
--		%		>>		==
+ <		+		|		>>>
+ >		/		^		[]
+ <=		~/		&		[]=
+ >=		*		<<		~
+ -		%		>>		==
 as (Typecast, 레퍼런스 타입 of,  true false)
 is (True if the Object has the specifed type)
 is!
 
 
 * 논리연산자
-!expr		(inverts true false)
-||		(logical OR AND)
-&&
+ !expr		(inverts true false)
+ ||		(logical OR AND)
+ &&
 
 * 비트와 시프트 연산자
-&	AND		|		OR
-^	XOR		~expr	
-<<	>>	shift		>>>  unsigned shift right
+ &	AND		|		OR
+ ^	XOR		~expr	
+ <<	>>	shift		>>>  unsigned shift right
 
 
 - Collections (컬렉션)
